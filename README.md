@@ -1,94 +1,90 @@
-# WAMEEDH — Keep the Spark Alive
+# WAMEEDH Scientific Club
 
-A responsive, single-file website for **WAMEEDH Scientific Club**, associated with IGEE / ex INELEC in Boumerdes, Algeria. The design pairs a dark, atmospheric visual style with club stories, event photography, member profiles, and an interactive exhibition.
+### A spark is only the beginning.
 
-## Features
+**WAMEEDH** is a student-run scientific and technical club at the **Institute of Electrical & Electronic Engineering (IGEE, formerly INELEC)**, **University of M’Hamed Bougara, Boumerdes, Algeria**.
 
-- Home, About, Departments, Projects, Join, Events, Archive, and Board views.
-- Event highlights and photo albums for Arduino Bootcamp, ART, HolyTech 2.0, and C Hackathon.
-- Member and event carousels with manual navigation and optional autoplay.
-- Living Exhibition with Members, Events, or combined playlists; pause, previous/next, and fullscreen controls.
-- Subtle scroll-driven particle effects that do not replace or cover photographs.
-- Light/dark theme and motion controls, plus support for reduced-motion preferences.
-- Responsive navigation, search, and contact/social links.
-- Embedded images, fonts, styles, and scripts: no package installation or build step.
+We bring curious students together to turn academic knowledge into practical experience. Through projects, workshops, bootcamps, and shared challenges, we create a space to explore ideas, develop skills, and build things together.
 
-## Repository structure
+**Learn by doing. Build together. Share what works.**
 
-```text
-.
-├── index.html    # Complete website, including embedded assets
-└── README.md     # Project documentation
-```
+---
 
-## Run locally
+## Who We Are
 
-Open `index.html` in a modern browser, or serve the repository with Python:
+WAMEEDH is a meeting point for people interested in engineering, technology, and creative problem-solving. Our community connects electrical engineering, electronics, and computer science through hands-on learning and collaboration.
 
-```bash
-python3 -m http.server 8000
-```
+Whether you are taking your first steps with a circuit or looking for teammates to bring an idea to life, there is a place to learn, contribute, and grow.
 
-Then visit **http://localhost:8000**. No Node.js or npm dependencies are required.
+## What We Explore
 
-## Publish with GitHub Pages
+- **Electronics & embedded systems** — circuits, microcontrollers, and hardware prototyping.
+- **Robotics & automation** — connecting code, sensors, and movement.
+- **Software & computer science** — programming and practical problem-solving.
+- **Artificial intelligence & computer vision** — exploring intelligent systems and visual computing.
+- **Internet of Things** — connecting devices, data, and real-world applications.
+- **3D design & prototyping** — shaping ideas into practical designs.
 
-1. Create a GitHub repository and upload `index.html` and `README.md` to its root.
-2. Open the repository’s **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose your default branch (usually `main`) and **/ (root)**, then save.
-5. When deployment finishes, open the site URL shown in the Pages settings.
+## What We Do
 
-Keep the website filename as `index.html` so Pages serves it as the homepage. Navigation uses hash routes such as `#/events`, so it does not require server-side routing or a custom 404 page.
+We connect learning with practice through:
 
-## Customize
+- Technical workshops and guided learning sessions.
+- Bootcamps that help students get started with new tools and technologies.
+- Collaborative projects and hardware–software experimentation.
+- Competitions and challenges that encourage teamwork.
+- Exhibitions, talks, and opportunities to exchange ideas.
+- Mentorship and peer-to-peer knowledge sharing.
 
-The project is intentionally bundled in one HTML file. Back it up before editing.
+## Our Events & Experiences
 
-| Change | Where to look in `index.html` |
+### Arduino Bootcamp
+A starting point for hands-on electronics and programming: exploring circuits, writing code, and discovering what you can build with Arduino.
+
+### ART — Arduino Robotic Training
+Putting knowledge into motion through robotics, making, testing, and learning together.
+
+### HolyTech
+A gathering for technology, technical work, creative expression, and conversations that bring people and ideas together.
+
+### C Hackathon
+A programming challenge featured in the club’s event archive, reflecting our community’s interest in coding and collaborative problem-solving.
+
+*For upcoming editions, dates, and participation announcements, follow our social channels.*
+
+## Our Departments
+
+Different strengths. One shared purpose.
+
+| Department | How it contributes |
 | --- | --- |
-| Page content and navigation | HTML sections and `data-view` attributes |
-| Layout, colors, typography | Inline `<style>` blocks |
-| Club members and photo archive | The embedded `DATA` object and `window.wameedhFinal` |
-| Particle appearance and motion | `window.WAMEEDH_FX_CONFIG` |
-| Exhibition timing and playback | `WAMEEDH_FX_CONFIG.exhibition` |
-| Contact and social destinations | `mailto:` links and social anchors |
+| **Projects** | Turns questions and ideas into practical technical work. |
+| **Learning** | Supports skill development and knowledge sharing. |
+| **Events** | Creates opportunities for people and ideas to meet. |
+| **Logistics** | Supports the organization and practical needs of club activities. |
+| **Media** | Shares the club’s work through visual storytelling and communication. |
+| **External Relations** | Builds connections and opens opportunities for collaboration. |
 
-### Particle settings
+## Find Your Place
 
-The current version keeps original photographs fully visible, excludes photo regions from the particle overlay, disables particle rendering during photo-shaped timeline segments, and removes carousel blur. Particle paths are deterministic rather than continuously shifting with wall-clock time.
+You do not need to know everything before you begin. Bring a question, an idea, a skill, or simply the motivation to learn.
 
-To disable particles by default, set `enabled: false` in `window.WAMEEDH_FX_CONFIG`. Visitors can also use the on-page particle and motion controls.
+Interested in joining, contributing, sharing expertise, or supporting an activity? Get in touch with us to learn about membership and collaboration opportunities.
 
-### Exhibition controls
+## Connect With WAMEEDH
 
-- Use the on-screen previous, next, and pause/resume buttons.
-- **Left / Right arrows:** switch slides.
-- **Space:** pause/resume when focus is not on an interactive control.
-- **Esc:** close the exhibition.
-- **Fullscreen:** request fullscreen when supported by the browser.
+- **Email:** [wameedh.sc@gmail.com](mailto:wameedh.sc@gmail.com)
+- **Instagram:** [@wameedh.sc](https://www.instagram.com/wameedh.sc/)
+- **Facebook:** [WAMEEDH Scientific Club](https://www.facebook.com/wameedh.sc/)
+- **LinkedIn:** [WAMEEDH Scientific Club](https://www.linkedin.com/company/wameedh-scientific-club)
+- **Location:** IGEE · University of M’Hamed Bougara · Boumerdes, Algeria
 
-## Technology
+---
 
-- HTML, CSS, and vanilla JavaScript.
-- Embedded Three.js for WebGL particles.
-- Embedded GSAP and ScrollTrigger for scroll animation.
-- Browser Web Animations API for exhibition transitions.
+## Acknowledgments
 
-## Browser and performance notes
+Special thanks to **Chaita Mouhamed Nizar** for his help and contributions to this project.
 
-Use a recent Chrome, Edge, Firefox, or Safari release. WebGL is needed for particle effects; when it is unavailable, the normal site content remains accessible. Fullscreen availability depends on the browser and embedding context.
+---
 
-The HTML file is approximately **14 MB** because media and libraries are embedded. This makes the site easy to move and host, but can increase initial load time. For a future production optimization, consider extracting media into an `assets/` directory and serving appropriately sized images separately.
-
-## Pre-publication checklist
-
-- Verify club member details, contact information, social links, and event dates.
-- Confirm permission to publish the photographs, names, club branding, and other supplied assets.
-- Test navigation, search, carousels, exhibition playback, and contact links.
-- Check mobile layouts and reduced-motion mode.
-- Review the licenses and notices for bundled third-party libraries before redistribution.
-
-## License and credits
-
-No project-wide license is specified in this repository. Add a `LICENSE` file only after deciding which rights you can grant. Club media, branding, and bundled third-party code may have separate rights and license terms; preserve the third-party notices in the HTML.
+**No spark burns alone. Keep the spark alive.**
