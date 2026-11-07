@@ -1,0 +1,36 @@
+{
+  "name": "wameedh-website",
+  "version": "1.0.0",
+  "description": "Official interactive web platform for WAMEEDH Scientific Club (IGEE, Boumerdes)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "serve:python": "python3 -m http.server 3000",
+    "test": "echo \"No tests specified. All assets self-contained in index.html\" && exit 0"
+  },
+  "keywords": [
+    "wameedh",
+    "scientific-club",
+    "igee",
+    "boumerdes",
+    "website",
+    "interactive",
+    "engineering",
+    "robotics",
+    "electronics"
+  ],
+  "author": "Ayoub (https://github.com/99S7CK1GC)",
+  "contributors": [
+    "Chaita Mouhamed Nizar"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Wameeedh/Wameedh-website#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wameeedh/Wameedh-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wameeedh/Wameedh-website/issues"
+  }
+}

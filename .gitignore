@@ -1,4 +1,4 @@
-# Operating System files
+# Operating System Files
 .DS_Store
 .DS_Store?
 ._*
@@ -6,14 +6,32 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+[Dd]esktop.ini
 
-# Editor & IDE files
+# Editor & IDE Directories
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
 
-# Logs and temporary files
-*.log
+# Node & Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build and Temporary Outputs
+dist/
+build/
 *.tmp
+*.log
+.cache/
+
+# Local Environment Variables
+.env
+.env.local
+.env.*.local
