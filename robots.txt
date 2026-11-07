@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wameedh-website.vercel.app/sitemap.xml
